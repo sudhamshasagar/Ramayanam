@@ -1,0 +1,367 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#navbar {
+    background-color: rgb(65, 60, 60);
+    justify-content: flex-end;
+}
+.navbar-nav .nav-link:hover {
+    color: orange !important; 
+}
+.fa-microphone{
+    margin-left: 10px;
+    color: white;
+    font-size: 21px;
+}
+.fa-microphone:hover{
+    color: aqua;
+}
+
+/* main content styling */
+
+.main-content{
+    display: flex;
+    margin: 15px;
+}
+.image-content{
+    display: flex;
+    flex-direction: column;
+    margin: 50px 40px;
+}
+.image img{
+    box-shadow: 0px 0px 5px 3px black;
+    border-radius: 5px;
+    width: 250px;
+}
+.shloka{
+    /* background-color: rgb(46, 44, 44); */
+    margin: 5px 53px;
+    border-radius: 5px 5px 0px 0px;
+    width: 9vw;
+}
+.shloka h3{
+    font-size: 15px;
+    margin: 8px 8px;
+    color: black;
+    text-align: center; 
+}
+.fa-fan{
+    color: red;
+}
+.about-content{
+    width: 70vw;
+    margin: 40px 20px;
+}
+
+.about-content h3, h5{
+    color: rgb(40, 38, 38);
+}
+.about-content h6{
+    text-align: right;
+}
+#translate select{
+    background-color: rgb(65, 60, 60);
+    border-style: none;
+    margin: 0px 5px;
+    color: orange;
+    border-radius: 3px;
+    font-size: 15px;
+}
+#translate label{
+    color: black;
+}
+
+.about-content p{
+    text-align: justify;
+    color: rgb(65, 60, 60);
+    line-height: 2rem;
+    font-size: 18px;
+}
+
+
+
+
+
+/* Content Page Styles */
+
+.description{
+    margin: 10px 5px;
+}
+.description p{
+    margin: 5px;
+    text-align: justify;
+    font-size: 17px;
+    line-height: 2rem;
+}
+.kaanda-shloka{
+    display: flex;
+}
+.Kaanda{
+    margin: 10px 5px 0px 15px;
+    width: 15vw;
+}
+.shlokas{
+    margin: 10px 5px 0px 5px;
+    /* box-shadow: 0px 0px 2px 1px black; */
+    background-color: rgb(200, 200, 200);
+    border-radius: 5px;
+    width: 80vw;
+}
+.shlokas h5{
+    text-align: center;
+    margin-top: 10px;
+    color: black;
+}
+.shlokas h6{
+    margin: 10px 15px;
+}
+.audio{
+    margin-top: 20px;
+    text-align: center;
+}
+audio {
+    background-color: #393939;
+    padding: 5px;
+    border-radius: 5px;
+}
+.audio-tab{
+    display: none;
+    text-align: center;
+    margin: auto;
+}
+.description{
+    margin-top: 20px;
+}
+.description h5{
+    text-align: left;
+    margin: 10px;
+}
+.description p{
+    margin: 10px 10px;
+    text-align: justify;
+}
+.buttons{
+    width: 80vw;
+    margin: 50px auto 0px;
+    display: flex;
+    justify-content: space-around;
+}
+.next-button{
+background-color: white;
+  padding: 5px;
+  width: 5vw;
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px 1px black;
+  border-style: none;
+  display: none;
+}
+.previous-button{
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px 1px black;
+    border-style: none;
+    display: none;
+}
+.next-button:hover, .previous-button:hover{
+    background-color: orange;
+
+}
+
+
+
+/* Responsiveness for Android */
+@media (max-width: 576px) {
+    /* Navbar Styles */
+#navbar {
+    background-color: rgb(65, 60, 60);
+    justify-content: flex-end;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: orange !important;
+  }
+  
+  .fa-microphone {
+    margin-left: 10px;
+    color: white;
+    font-size: 21px;
+  }
+  
+  .fa-microphone:hover {
+    color: aqua;
+  }
+  
+  /* Main Content Styling */
+  
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    margin:  auto;
+  }
+  
+  .image-content {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 40px;
+  }
+  
+  .image img {
+    box-shadow: 0px 0px 5px 3px black;
+    border-radius: 5px;
+    width: 250px;
+  }
+  
+  .shloka {
+    margin: 5px 53px;
+    border-radius: 5px 5px 0px 0px;
+    width: 9vw;
+  }
+  
+  .shloka h3 {
+    font-size: 15px;
+    margin: 8px 8px;
+    color: black;
+    text-align: center;
+  }
+  
+  .fa-fan {
+    color: red;
+  }
+  
+  .about-content {
+    width: 70vw;
+    margin: 40px 20px;
+  }
+  
+  .about-content h3,
+  .about-content h5 {
+    color: rgb(40, 38, 38);
+  }
+  
+  .about-content h6 {
+    text-align: right;
+  }
+  
+  #translate select {
+    background-color: rgb(65, 60, 60);
+    border-style: none;
+    margin: 0px 5px;
+    color: orange;
+    border-radius: 3px;
+    font-size: 15px;
+  }
+  
+  #translate label {
+    color: black;
+  }
+  
+  .about-content p {
+    text-align: justify;
+    color: rgb(65, 60, 60);
+    line-height: 2rem;
+    font-size: 18px;
+  }
+  
+  /* Content Page Styles */
+  
+  .description {
+    margin: 10px auto;
+    width: 90vw;
+  }
+  
+  .description p {
+    margin: auto;
+    text-align: justify;
+    font-size: 17px;
+    line-height: 2rem;
+  }
+  
+  .kaanda-shloka {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .Kaanda {
+    margin: 10px auto;
+    width: 90vw;
+  }
+  
+  .shlokas {
+    margin: 10px auto;
+    background-color: rgb(200, 200, 200);
+    border-radius: 5px;
+    width: 85vw;
+  }
+  
+  .shlokas h5 {
+    text-align: center;
+    margin-top: 10px;
+    color: black;
+  }
+  
+  .shlokas h6 {
+    margin: 10px 10px;
+  }
+  
+  .audio {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  audio {
+    background-color: #393939;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  .audio-tab {
+    display: none;
+    text-align: center;
+    margin: auto;
+  }
+  
+  .description {
+    margin-top: 20px;
+  }
+  
+  .description h5 {
+    text-align: left;
+    margin: 10px;
+  }
+  
+  .description p {
+    margin: 10px auto;
+    text-align: justify;
+    width: 70vw;
+  }
+  
+  .buttons {
+    margin: 50px auto 0px;
+    display: flex;
+    flex-direction: column;
+    /* width: 10vw; */
+    justify-content: space-around;
+  }
+  
+  .next-button,
+  .previous-button {
+    width: 15vw;
+    padding: 8px 16px; /* Adjust padding for smaller screens */
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+  
+  .next-button:hover,
+  .previous-button:hover {
+    background-color: orange;
+  }
+  
+}

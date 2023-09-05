@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shri Ramayanam</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section>
+        <nav class="navbar navbar-expand-lg" id="navbar">
+            <div class="container-fluid">
+                <!-- <a class="navbar-brand" href="#" style="color: orange;">श्री राम जय राम जय जय राम |</a> -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item" >
+                            <a class="nav-link" href="index.html" style="color: white;" >Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="content.html" style="color: white;">Content</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: white;">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section>
+        <div class="description">
+            <p>Select your chosen Kaanda, and embark on a spiritual journey through its sacred shlokas, accompanied by their profound meanings and audio recitations. Let the epic tale of Lord Rama and his divine journey inspire and enlighten you.</p>
+        </div>
+        <div class="kaanda-shloka">
+            <div class="Kaanda">
+                <label for="selecting kaanda">Kaanda List:</label>
+                <select id="select-kaanda" class="ml-2" value="">
+                    <option value="">Select Kaanda</option>
+                    <option value="baala-kaanda">Baala Kaanda</option>
+                    <option value="ayodhya-kaanda">Ayodhya Kaanda</option>
+                    <option value="aak">Aranya Kaanda</option>
+                    <option value="kk">Kishkindha Kaanda</option>
+                    <option value="sk">Sundara Kaanda</option>
+                    <option value="yk">Yuddha Kaanda</option>
+                    <option value="uk">Uttara Kaanda</option>
+                </select>
+            </div>
+            <div class="shlokas">
+                <h5 class="shloka-heading">Shloka, Relevant Audio and It's Explanation Will Be Displayed Here</h5>
+                <div class="sk">
+                    <h6></h6>
+                    <h5 class="heading-shloka"></h5>
+                    <!-- <h5>नारदं परिपप्रच्छ वाल्मीकिर्मुनिपुङ्गवम् ।।1.1.1।।</h5> -->
+                </div>
+                <div class="audio">
+                    <audio controls class="audio-tab">
+                        <source src="audiofile.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="description">
+                    <div class="english">
+                        <h5></h5>
+                        <p ></p>
+                    </div>
+                    <div class="kannada">
+                        <h5></h5>
+                        <p></p>
+                    </div>
+                    <div class="hindi">
+                        <h5></h5>
+                        <p></p>
+                    </div>
+                    <div class="buttons">
+                        <button class="previous-button">Previous</button>
+                        <button class="next-button">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
